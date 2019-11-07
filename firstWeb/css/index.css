@@ -1,0 +1,610 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {  /*声明字体  引用字体*/
+    font-family: "icomoon";  /*我们自己起名字可以*/
+    src:  url('../fonts/icomoon.eot?7kkyc2');
+    src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-style: normal;  /*倾斜字体正常*/
+}
+
+/*span{*/
+    /*font-family: "icomoon";*/
+/*}*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: hotpink;
+}
+
+a{
+    color:black;
+}
+
+.index{
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    background-color: white;
+    opacity: 1;
+    z-index: 9999;
+}
+
+.indexCss{
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 340px;
+    position: relative;
+}
+
+/*.indexAlone {*/
+    /*position: absolute;*/
+    /*margin-top: 50px;*/
+    /*display: inline-block;*/
+    /*font-size: 15px;*/
+    /*color: blue;*/
+    /*margin-left: -150px;*/
+/*}*/
+
+
+.indexLi{
+    font-size: 14px;
+    text-align: center;
+    width: 950px;
+    background-color: orange;
+    margin-left: 380px;
+    margin-top: -45px;
+}
+
+
+ul{
+    margin-top: 10px;
+}
+
+ul li{
+    float: left;
+    display: block;
+    width: 70px;
+    margin-left: 25px;
+}
+
+
+ul li a{
+    display: block;
+    width: 70px;
+    height: 50%;
+}
+
+ul li ul{
+    display: none;
+    width: 70px;
+    height: 72px;
+    background-color: white;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+ul li ul li{
+    height: 34px;
+    width: 65px;
+    float: none;
+    margin-left: 15px;
+}
+
+ul li ul li a{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70px;
+    height: 18px;
+    display: block;
+    margin-left: -15px;
+}
+
+ul li ul li a:hover{
+    background-color: #396cad;
+}
+
+.indexSearch{
+    width: 300px;
+    margin-left: 1210px;
+}
+
+.indexSearch input {
+    position: relative;
+    display: block;
+    font-family: "icomoon";
+    text-align: left;
+    font-size: 12px;
+    color: #cccccc;
+    height: 21px;
+    width: 170px;
+}
+
+.indexSearch  button{
+    border: 0px;
+    position: absolute;
+    font-family: "icomoon";
+    width: 20px;
+    height: 20px;
+    margin-left: 152px;
+    margin-top: -22px;
+    background-color: #fff;
+}
+
+.indexLogin{
+    width: 70px;
+    display: block;
+    text-align: center;
+    margin-left: 1395px;
+    margin-top: -22px;
+    /*position: relative;*/
+}
+
+.indexLogin a{
+    width: 70px;
+    font-size: 14px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.photo{
+    position: absolute;
+    width: 400px;
+    height: 30px;
+    margin-top: -30px;
+    margin-left: 1460px;
+}
+
+.photo ul li{
+    width: 20px;
+    float: left;
+}
+
+.photo ul li a {
+    font-family: "icomoon";
+    font-size: 18px;
+}
+
+
+.time{
+    width: 100px;
+    height: 20px;
+    margin-left: 1820px;
+    margin-top: -7px; 
+}
+
+.bodyBgc{
+    position: absolute;
+    margin-top: 55px;
+    width: 100%;
+    height: 1180px;
+    background-image: url("../images/grasslands.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    opacity: 0.7;
+    /*背景 图*/
+}
+
+
+
+.bodyIndex{
+    position: absolute;
+    width: 1200px;
+    height: 100px;
+    margin-top: 200px;
+    margin-left: 350px;
+    background-color: white;
+}
+
+
+
+.bodyIndexImg{
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius:50%;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 35px;
+    background-color: white;
+}
+
+.bodyIndexImg img{
+    border-radius:50%;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.bodyIndexBox{
+    width: 700px;
+    height: 90px;
+    margin-left: 180px;
+    margin-top: 5px;
+}
+
+.bodyIndexName {
+    display:block;
+    max-width: 132px;
+    text-align: center;
+    font-size: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.bodyIndexName>span{
+    margin-left: 15px;
+}
+
+.bodyIndexName span{
+
+}
+
+.bodyIndexBox:hover{
+    box-shadow: 3px 3px 10px 3px #C4C4C4;
+}
+
+.bodyIndexNameM{
+    font-size: 14px;
+    width: 65px;
+    height: 14px;
+    margin-left: 110px;
+    margin-top: -30px;
+    background-color: #e74c3c;
+    line-height: 13px;
+    text-align: center;
+    border-radius: 20%;
+    
+}
+
+.bodyIndexNameM>div>span{
+    color: white !important;
+}
+
+.bodyIndexNameM a{
+    display: block;
+    color: white !important;
+}
+
+
+.bodyIndexNameTab{
+    display: inline-block;
+    font-weight: 200;
+    position: absolute;
+    font-size: 13px;
+    line-height: 13px;
+    margin-left: 200px;
+    margin-top: 0px;
+}
+
+.bodyIndexNameTab span{
+    width: 50px;
+    margin-left: 10px;
+}
+
+.bodyIndexNameTabData{
+    color: #e74c3c;
+}
+
+.bodyIndexNameNote{
+    position: absolute;
+    display: block;
+    max-width: 400px;
+    height: 15px;
+    font-size: 13px;
+    color: #888;
+    margin-top: 35px;
+    margin-left: 15px;
+    max-width: 664px;
+    line-height: 15px;
+
+}
+
+.bodyIndexNameNote p{
+    max-width: 300px;
+    line-height: 20px;
+    max-height: 38px;
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    overflow: hidden;
+}
+.bodyIndexButtonLick{
+    position: absolute;
+    margin-left: 950px;
+    margin-top: -55px;
+    width: 88px;
+    height: 32px;
+    line-height: 32px;
+    background: #fd4c5b;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.bodyIndexButtonLick a{
+    color: #fff !important;
+}
+
+.bodyIndexButtonNote{
+    position: absolute;
+    margin-left: 1080px;
+    font-size: 15px;
+    margin-top: -55px;
+    width: 66px;
+    height: 32px;
+    line-height: 32px; 
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #C4C4C4;
+}
+
+.bodyIndexButtonNote a{
+    color: #c4c4c4 !important;
+}
+
+.bodyText{
+    position: absolute;
+    width: 1200px;
+    height: 850px;
+    margin-top: 330px;
+    margin-left: 350px;
+    background-color: white;
+}
+
+.bodyTextTab{
+    width: 700px;
+    height: 42px;
+    margin-left: 20px;
+    border-bottom: 1px solid #C4C4C4;
+    line-height: 40px;
+    text-align: center;
+}
+
+.bodyTextTab a{
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+    max-width: 70px;
+    float: left;
+}
+
+.ml{
+    margin-left: 20px;
+}
+
+.bb{
+    border-bottom: 3px solid #e74c3c;
+}
+
+.c{
+    color: #e74c3c;
+}
+
+.bgc{
+    background-color: #e74c3c;
+}
+
+.bodyTextTab a:hover{
+    color: #e74c3c;
+}
+
+.bodyTextTab span{
+    font-size: 12px;
+
+}
+
+.bodyTextContent{
+    width: 1200px;
+}
+
+.bodyIndexContentDiv{
+    width: 200px;
+    height: 180px;
+    text-align: left;
+    float: left;
+    display: block;
+    margin-top: 20px;
+    margin-left: 34px;
+}
+
+/*.bodyIndexContentDiv figure:hover{*/
+    /*box-shadow: 3px 3px 10px 3px #C4C4C4;*/
+/*}*/
+
+.bodyIndexContentDiv img{
+    overflow: hidden;
+    width: 200px;
+    height: 120px;
+}
+
+.bodyIndexContentDivView{
+    font-size: 10px;
+    color: #C4C4C4;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.bodyTextSpan{
+    position: absolute;
+    width: 390px;
+    height: 30px;
+    margin-top: 1030px;
+    margin-left: 765px;
+    /*background-color: yellow;*/
+}
+
+.bodyTextSpan span{
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #C4C4C4;
+    margin-left: 10px;
+}
+
+.Fb{
+    font-weight: 900;
+}
+
+.bodyTextSpan p{
+    display: block;
+    line-height: 14px;
+    text-align: center;
+    margin-top: 7px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #C4C4C4;
+}
+
+.foot{
+    position: absolute;
+    margin-top: 1235px;
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-color: #ececec;
+}
+
+.ico{
+    width: 325px;
+    height: 240px;
+    transform: scale(0.3);
+    overflow: hidden;
+}
+
+.cooperate{
+    display: block;
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 350px;
+    border-right: rebeccapurple;
+
+}
+
+.cooperate>p>a{
+    display: block;
+    color: #C4C4C4;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.cooperate>span>a{
+    float: left;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.nml{
+    margin-left: 0 !important;
+}
+
+.authority{
+    margin-left: 600px !important;
+}
+
+
+.download{
+    margin-left: 850px !important;
+}
+
+.friend{
+    margin-left: 1050px !important;
+}
+
+.feedback{
+    margin-left: 1250px !important;
+}
+
+.footLink{
+    position: absolute;
+    width: 1200px;
+    height: 200px;
+    margin-top: 150px;
+    margin-left: 350px;
+}
+
+.footLinkImg{
+    position: absolute;
+    display: block;
+    margin-left: 487.1px;
+    margin-top: 136px;
+    text-align: center;
+}
+
+.footLinkImg img{
+    width: 100px;
+}
+
+.footLinkImg p{
+    font-size: 11px;
+    color: #C4C4C4;
+    margin-top: 3px;
+}
+
+.footLink{
+
+    font-size: 12px;
+    margin-top: 200px;
+    width: 1000px;
+}
+
+.footLink>span{
+    display: block;
+    float: left;
+    margin-left: 70px;
+    margin-bottom: 10px;
+
+}
+
+.footLink>span>a{
+    color: #555555;
+    opacity: 0.8;
+}
+
+.footLink>a{
+    font-size: 12px;
+    color: #C4C4C4;
+}
+
+
+
+.ico{
+    position: absolute;
+    margin-left: 1340px;
+    margin-top: -50px;
+}
+
+
+
+
+#hamster{
+    display: block;
+    position: fixed;
+    margin-top: 720px;
+    margin-left: 1680px;  
+}
+
+/*SCRIPT*/
+#imgId {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: -60px;
+}

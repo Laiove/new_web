@@ -1,0 +1,488 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {  /*声明字体  引用字体*/
+    font-family: "icomoon";  /*我们自己起名字可以*/
+    src:  url('../fonts/icomoon.eot?7kkyc2');
+    src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-style: normal;  /*倾斜字体正常*/
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: hotpink;
+}
+
+a{
+    color:black;
+}
+
+input{
+    outline:none;
+}
+
+
+.index{
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    background-color: white;
+    opacity: 1;
+    z-index: 9999;
+}
+
+.indexCss{
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 340px;
+    position: relative;
+}
+
+/*.indexAlone {*/
+    /*position: absolute;*/
+    /*margin-top: 50px;*/
+    /*display: inline-block;*/
+    /*font-size: 15px;*/
+    /*color: blue;*/
+    /*margin-left: -150px;*/
+/*}*/
+
+
+.indexLi{
+    font-size: 14px;
+    text-align: center;
+    width: 950px;
+    background-color: orange;
+    margin-left: 380px;
+    margin-top: -45px;
+}
+
+
+ul{
+    margin-top: 10px;
+}
+
+ul li{
+    float: left;
+    display: block;
+    width: 70px;
+    margin-left: 25px;
+}
+
+
+ul li a{
+    display: block;
+    width: 70px;
+    height: 50%;
+}
+
+ul li ul{
+    display: none;
+    width: 70px;
+    height: 72px;
+    background-color: white;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+ul li ul li{
+    height: 34px;
+    width: 65px;
+    float: none;
+    margin-left: 15px;
+}
+
+ul li ul li a{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70px;
+    height: 18px;
+    display: block;
+    margin-left: -15px;
+}
+
+ul li ul li a:hover{
+    background-color: #396cad;
+}
+
+.indexSearch{
+    width: 300px;
+    margin-left: 1210px;
+}
+
+.indexSearch input {
+    position: relative;
+    display: block;
+    font-family: "icomoon";
+    text-align: left;
+    font-size: 12px;
+    color: #cccccc;
+    height: 21px;
+    width: 170px;
+}
+
+.indexSearch  button{
+    border: 0px;
+    position: absolute;
+    font-family: "icomoon";
+    width: 20px;
+    height: 20px;
+    margin-left: 152px;
+    margin-top: -22px;
+    background-color: #fff;
+}
+
+.indexLogin{
+    width: 70px;
+    display: block;
+    text-align: center;
+    margin-left: 1395px;
+    margin-top: -22px;
+    /*position: relative;*/
+}
+
+.indexLogin a{
+    width: 70px;
+    font-size: 14px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.photo{
+    position: absolute;
+    width: 400px;
+    height: 30px;
+    margin-top: -30px;
+    margin-left: 1460px;
+}
+
+.photo ul li{
+    width: 20px;
+    float: left;
+}
+
+.photo ul li a {
+    font-family: "icomoon";
+    font-size: 18px;
+}
+
+
+.time{
+    width: 100px;
+    height: 20px;
+    margin-left: 1820px;
+    margin-top: -7px; 
+}
+
+
+/*注册框*/
+.register{
+    position: absolute;
+    width: 540px;
+    height: 600px;
+    margin-top: 175px;
+    margin-left: 875px;
+    border: 1px solid #C4C4C4;
+    background-color: #fff; 
+}
+
+.error {
+    margin-left: 85px;
+    margin-top: 10px;
+    width: 450px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+}
+
+.avatar{
+    margin-left: 120px;
+    margin-top: 15px;
+    width: 300px;
+    height: 30px;
+}
+
+.avatar span{
+    font-size: 14px;
+}
+
+#avatar{
+    margin-left: 10px;
+}
+
+
+.email input{
+    margin-left: 85px;
+    margin-top: 25px;
+    border-style: none;
+    width: 350px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.password input{
+    margin-left: 85px;
+    margin-top: 25px;
+    border-style: none;
+    width: 350px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.password2 input{
+    margin-left: 85px;
+    margin-top: 25px;
+    border-style: none;
+    width: 350px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.nickname input{
+    margin-left: 85px;
+    margin-top: 25px;
+    border-style: none;
+    width: 350px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.title input{
+    margin-left: 85px;
+    margin-top: 25px;
+    border-style: none;
+    width: 350px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.WR input{
+    margin-left: 85px;
+    margin-top: 25px;
+    border-style: none;
+    width: 350px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.upload{
+    width: 350px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 90px;
+    background-color: #e74c3c; 
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.enterDivLogo img{
+    width: 90px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.enterDivLogo p{
+    position: absolute;
+    margin-top: -24px;
+    margin-left: 105px;
+    font-size: 12px;
+}
+
+
+/*背景 图*/
+.bodyBgc{
+    position: absolute;
+    margin-top: 55px;
+    width: 100%;
+    height: 890px;
+    background-image: url("../images/moon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+  /*  transform: scale(0.8);*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*脚部*/
+.foot{
+    position: absolute;
+    margin-top: 900px;
+    display: block;
+    width: 100%;
+    height: 260px;
+    background-color: #ececec;
+}
+
+.cooperate{
+    display: block;
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 350px;
+    border-right: rebeccapurple;
+}
+
+.cooperate>p>a{
+    display: block;
+    color: #C4C4C4;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.cooperate>span>a{
+    float: left;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.nml{
+    margin-left: 0 !important;
+}
+
+.authority{
+    margin-left: 600px !important;
+}
+
+
+.download{
+    margin-left: 850px !important;
+}
+
+.friend{
+    margin-left: 1050px !important;
+}
+
+.feedback{
+    margin-left: 1250px !important;
+}
+
+.ico{
+    position: absolute;
+    margin-left: 1340px;
+    margin-top: -50px;
+    width: 325px;
+    height: 240px;
+    transform: scale(0.3);
+    overflow: hidden;
+
+}
+
+.footLinkImg{
+    position: absolute;
+    display: block;
+    margin-left: 787.1px;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.footLinkImg img{
+    width: 100px;
+}
+
+.footLinkImg p{
+    font-size: 11px;
+    color: #C4C4C4;
+    margin-top: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SCRIPT*/
+#imgId {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: -60px;
+}
+
+#accountId{
+    display: block;
+    margin-top: 13px;
+    font-size: 13px;
+}
+
+#passwordId{
+    display: block;
+    margin-top: 15px;
+    font-size: 13px;
+}
